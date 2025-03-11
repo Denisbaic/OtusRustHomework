@@ -1,0 +1,10 @@
+[package]
+name = "smart_house_server_async"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+smart_house = { path = "../smart_house" }
+my_stp_async = { path = "../my_stp_async" }
+tokio = { version = "1", features = ["full"] }
+thiserror = "2"

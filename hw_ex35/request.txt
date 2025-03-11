@@ -1,0 +1,43 @@
+curl --request GET --url "http://localhost:8080/"
+
+curl --request GET --url "http://localhost:8080/houses" --header "Content-Type: application/json"
+
+curl --request GET --url "http://localhost:8080/houses/0/rooms" --header "Content-Type: application/json"
+
+curl --request POST --url "http://localhost:8080/houses/0/rooms" --header "Content-Type: application/json" --data '{
+           "name": "Гостиная"
+         }'
+
+curl --request POST --url "http://localhost:8080/houses/0/rooms" --header "Content-Type: application/json" --data '{
+    "name": "Кухня"
+}'
+
+curl --request POST --url "http://localhost:8080/houses/0/rooms" --header "Content-Type: application/json" --data '{
+    "name": "Спальня"
+}'
+
+curl --request GET --url "http://localhost:8080/houses/0/rooms" --header "Content-Type: application/json"
+
+curl --request GET --url "http://localhost:8080/rooms/1/devices" --header "Content-Type: application/json"
+
+curl --request POST --url "http://localhost:8080/rooms/1/devices" --header "Content-Type: application/json" --data '{
+  "device_name": "Умная лампочка",
+  "device_type": "light"
+}'
+
+curl --request POST --url "http://localhost:8080/rooms/2/devices" --header "Content-Type: application/json" --data '{
+  "device_name": "Умный термометр",
+  "device_type": "thermometer"
+}'
+
+curl --request GET --url "http://localhost:8080/rooms/1/devices" --header "Content-Type: application/json"
+
+curl --request GET --url "http://localhost:8080/rooms/2/devices" --header "Content-Type: application/json"
+
+curl --request GET --url "http://localhost:8080/rooms/3/devices" --header "Content-Type: application/json"
+
+curl --request DELETE --url "http://localhost:8080/devices/1" --header "Content-Type: application/json"
+
+curl --request POST --url "http://localhost:8080/devices/report" --header "Content-Type: application/json" --data '{
+  "device_ids": [1, 2]
+}'

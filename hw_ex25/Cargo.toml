@@ -1,0 +1,6 @@
+[workspace]
+members = [ 
+    "my_stp", "my_stp_async", "smart_house", "smart_house_cli", "smart_house_cli_async", "smart_house_client", "smart_house_client_async", "smart_house_server","smart_house_server_async", "thread_cancellation_token",
+]
+
+resolver = "2"

@@ -1,0 +1,8 @@
+[package]
+name = "smart_house_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+smart_house = { path = "../smart_house" }
+my_stp = { path = "../my_stp" }

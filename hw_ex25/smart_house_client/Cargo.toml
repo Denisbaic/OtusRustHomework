@@ -1,0 +1,8 @@
+[package]
+name = "smart_house_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+my_stp = { path = "../my_stp" }
+thread_cancellation_token = { path = "../thread_cancellation_token" }

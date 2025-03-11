@@ -1,0 +1,6 @@
+[workspace]
+members = [ 
+    "my_stp", "smart_house", "smart_house_cli", "smart_house_client", "smart_house_server",
+]
+
+resolver = "2"
